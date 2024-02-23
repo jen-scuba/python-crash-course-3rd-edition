@@ -1,5 +1,5 @@
 # Chapter 7 - User Input and While Loops
-# Try it yourself7-4_movie_ticket.py
+# Try it yourself7-5_movie_ticket.py
 
 
 prompt = "\nTo determine the price of you movie ticket, please enter your age : "
