@@ -1,6 +1,3 @@
-"""A class that can be used to represent a car."""
-
-
 class Car:
     """A simple attempt to represent a car."""
 
@@ -38,28 +35,34 @@ class Car:
             print("You can't roll back an odometer!")
 
 
-# my_new_car = Car("audi", "a4", 2024)
-# print(my_new_car.get_descriptive_name())
-# my_new_car.read_odometer()
+class Battery:
+    """A simple attempt to model a battery for an electric car."""
 
-# # 3 ways to modify attribute value
-# # 1 - directly
-# my_new_car.odometer_reading = 23
-# my_new_car.read_odometer()
+    def __init__(self, battery_size=40):
+        """Initialize the battery's attributes."""
+        self.battery_size = battery_size
 
-# # 2 - directly through a method
-# my_new_car.update_odometer(24)
-# my_new_car.read_odometer()
+    def describe_battery(self):
+        """Print a statement describing the battery size."""
+        print(f"This cas has a {self.battery_size}-kWh battery.")
 
-# # 3 - incrementing value through a method
-# my_used_car = Car("subaru", "outback", 2019)
-# print(my_used_car.get_descriptive_name())
+    def get_range(self):
+        """Print a statement about the range this batttery provides."""
+        if self.battery_size == 40:
+            range = 150
+        elif self.battery_size == 65:
+            range = 225
 
-# my_used_car.update_odometer(23500)
-# my_used_car.read_odometer()
+        print(f"This car can go about {range} miles on a full charge.")
 
-# my_used_car.increment_odometer(100)
-# my_used_car.read_odometer()
 
-# my_used_car.increment_odometer(-1)
-# my_used_car.read_odometer()
+class ElectricCar(Car):
+    """Represent aspects of  car, specific to electric vehicles."""
+
+    def __init__(self, make, model, year):
+        """
+        Initialize attributes of the parent class.
+        Then initialize attributes specific to an electric car.
+        """
+        super().__init__(make, model, year)
+        self.battery = Battery()

@@ -1,3 +1,5 @@
+"""A chapter 9 module containing classes for admins."""
+
 from classes_91 import User
 
 
@@ -32,9 +34,3 @@ class Admin(User):
         """
         super().__init__(first_name, last_name, job, state)
         self.privileges = Privileges()
-
-
-# admin_1 = Admin("Jane", "Doe", "Site Admininstrator", "Maryland")
-# # admin_1.show_privileges()
-# admin_1.describe_user()
-# admin_1.privileges.show_privileges()
