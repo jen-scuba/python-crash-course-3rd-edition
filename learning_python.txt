@@ -1,0 +1,5 @@
+In Python you can create functions
+In Python you can create classes with atributes and methods
+In Python you can build modules that other programs and developers can use
+In Python you can build simple or complex routines
+In Python everything is an object

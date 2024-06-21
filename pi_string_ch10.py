@@ -1,10 +1,13 @@
 from pathlib import Path
 
-path = Path('pi_digits.txt')
+path = Path('pi_million_digits.txt')
 contents = path.read_text()
-#print(contents)
 
 # lines = contents.splitlines()
+pi_string = ''
 # for line in lines:
 for line in contents.splitlines():
-    print(line)
+    pi_string += line.lstrip()
+
+print(f"{pi_string[:52]}...")
+print(len(pi_string))
