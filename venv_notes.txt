@@ -1,0 +1,14 @@
+created venv env due to package updates and installs
+https://docs.python.org/3/tutorial/venv.html
+
+python -m venv /path/to/new/virtual/environment
+
+python3.12 -m venv /Users/jennifer/courses/OReilly/python-crash-course-3rd-edition
+
+https://packaging.python.org/en/latest/guides/installing-using-pip-and-virtual-environments/
+
+To Activate:
+source /Users/jennifer/courses/OReilly/python-crash-course-3rd-edition/bin/activate
+
+To Deactivate:
+deactivate
